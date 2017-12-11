@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
+/*MAIN*/
+body {
+	font-size: 1.05em;
+	line-height: 1.25em;
+	font-family: Helvetica Neue, Helvetica, Arial;
+	background: lightblue;
+	color: #555;
+}
+
+a {
+	color: #2262AD;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.overzicht{
+	color: #000000;
+	text-decoration: none;
+	font-weight: normal;	
+}
+
+a:hover {
+	color: #fff;
+}
+
+#verslagtable{
+	table-layout: fixed;
+}
+
+td 
+{
+    text-align:center; 
+    vertical-align:middle;
+}
+
+
+
+td img .overzicht{
+	text-align:right;
+    vertical-align:bottom;
+}
+ 
+.dag{
+	font-size: 18px;
+	text-align: center;
+}
+.overzicht{
+	table-layout: fixed;
+}
+
+.verslagimg, .verslagtext{
+	width: 50%; 
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+header {
+	background: #100653;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 4px solid #4C9CF1;
+	z-index: 100;
+
+}
+
+#textfield{
+	width: 75%;
+	font-size: 30px;
+}
+
+#knop{
+	background: #100653;
+	color: #fff;
+	align-items: center;
+	height: 50px;
+	width: 75%;
+}
+
+#frontpage{
+	width: 75%;
+}
+
+nav {
+
+	padding-top: 10px;
+	margin:0 auto;
+	list-style:none;
+	text-align: center;
+
+
+}
+
+#nav li {
+	display:inline;
+}
+
+#nav a {
+display:inline-block;
+text-align:center;
+text-decoration:none; 
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: #4C8FEC url(images/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+	background-color: #fff;
+	border-radius: 4px 4px 0 0;
+
+}
+.tip{
+	font-size: 18px;
+	color: #777;
+}
+
+.probleem, .verslagkop{
+	text-align: center
+}
+ul {
+
+
+	list-style: none;
+
+}
+
+li {
+
+	display: inline-block;
+	padding: 10px;
+
+}
+p .tips{
+	font-size: 12px;
+
+}
+
+.bad{
+	color: red;
+}
+.good{
+	color: forestgreen;
+}
+.current {
+	color: lightblue;
+}
+
+section {
+
+	margin: 80px auto 40px;
+	max-width: 980px;
+	position: relative;
+	padding: 20px;
+
+}
+
+h1 {
+
+	font-size: 2em;
+	color: #fff;
+	line-height: 1.15em;
+	margin: 20px 0 ;
+	text-align: center;
+
+}
+h2{
+	font-size: 1.5em;
+	color: black;
+	text-align: center;
+  padding-top: 25px;
+}
+
+p {
+	text-align: center;
+	line-height: 1.45em;
+	margin-bottom: 20px;
+	font-size: 20px;
+
+}
+
+.content{
+	padding-top: 130px;
+	padding-bottom: 50px;
+}
+
+table {
+  margin: 20px auto;
+  width: 100%;
+	color: BLACK;
+	font-family: Helvetica, Arial;
+
+}
+th,td {
+/*border: 1px solid black;*/
+  font-weight: 400;
+  padding: 18px;
+  text-align: left;
+  font-size: 18px;
+
+}
+thead th,th {
+  background: #88CCF1;
+  font-size: 23px;
+  font-weight: 100;
+
+}
+
+.graph{
+	text-align:left;
+	padding-left: 12.5%;
+
+}
+tr {
+  background: lightblue;
+  margin-bottom: 5px;
+  font-size: 18px ;
+
+}
+
+/*The table test for the overzicht page*/
+/*.table1{
+	border: 1px solid black;
+	width: 32%;
+	margin: 20px auto;
+	color: BLACK;
+	font-family: Helvetica, Arial;
+}
+
+.thead1{
+
+
+}
+
+.tbody1{
+
+
+}
+
+.tfoot1{
+
+
+}
+
+.th1{
+border: 1px solid black;
+
+}
+
+.td1{
+border: 1px solid black;
+
+}*/
