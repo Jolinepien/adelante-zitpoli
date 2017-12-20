@@ -1,52 +1,19 @@
-<!doctype html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="WebsiteProjectB2-CSS.css">
-<meta charset="utf-8">
-<title>Home - Zitpoli app</title>
-</head>
 
-<body>
-<header>
-  <nav>
-
-<h1>
-
-    Home
-</h1>
-
-<a href="#" id="menu-icon"></a>
-
-<ul>
-
-<li><a href="WebsiteProjectB2-Home.html" class="current">Home</a></li>
-<li><a href="WebsiteProjectB2-DagVerslag.html">Verslag van de dag</a></li>
-<li><a href="WebsiteProjectB2-Overzicht.html" >Overzicht</a></li>
-<li><a href="WebsiteProjectB2-TipsTricks.html">Tips en Tricks</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-<div class="content" id="frontpage">
-  <script src="processing.js"></script>
-  <script type="text/processing" data-processing-target="processing-canvas">
-
-
+String sensors;
+float [] sensorval;
+String[] splitsensor;
+//int sensors;
 
 void setup(){
+    fullScreen();
     background(255);
     rectMode(CENTER);
-	size(500,500)
 
 }
 
 
 void draw(){
- 	String sensors;
-float [] sensorval;
-String[] splitsensor;
+
 
     color white = color(255,255,255);
 
@@ -72,7 +39,7 @@ String[] splitsensor;
     color RightUpper = color(maxSize - scale*dist(X, Y, right, upper), 0, scale*dist(X, Y, right, upper));
     color RightDown = color(maxSize - scale*dist(X, Y, right, down), 0, scale*dist(X, Y, right, down));
     
-    background(173,216,229);                  
+    background(0);                  
     
     noStroke();
     fill(LeftUpper);
@@ -89,7 +56,7 @@ String[] splitsensor;
    
    noFill();
    stroke(255);
-   strokeWeight(30);
+   strokeWeight(50);
    strokeCap(ROUND);
    line(width/2-6*LEDsize/5, height/3, width/2-6*LEDsize/5, down+LEDsize/2);
    arc(left-LEDsize/2, down+LEDsize/2, 2*( (left-LEDsize/2)-(width/2-6*LEDsize/5)), 2*((left-LEDsize/2)-(width/2-6*LEDsize/5)), HALF_PI, PI);
@@ -98,10 +65,3 @@ String[] splitsensor;
    line(width/2+6*LEDsize/5, height/3, width/2+6*LEDsize/5, down+LEDsize/2);
    
 }
- </script>
- <canvas id="processing-canvas"> </canvas>
-
-<h2><strong> Sinds de vorige beweging </strong></h2>
-	</div>
-</body>
-</html>
