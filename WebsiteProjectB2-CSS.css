@@ -13,6 +13,10 @@ body {
 	color: #555;
 }
 
+#processing-canvas {
+	display: inline-block;
+}
+
 a {
 	color: #2262AD;
 	text-decoration: none;
@@ -89,7 +93,8 @@ header {
 }
 
 #frontpage{
-	width: 75%;
+	text-align:center;
+
 }
 
 nav {
